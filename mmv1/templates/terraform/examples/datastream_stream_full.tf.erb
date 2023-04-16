@@ -157,6 +157,7 @@ resource "google_datastream_stream" "<%= ctx[:primary_resource_id] %>" {
                 }
             }
             max_concurrent_cdc_tasks = 5
+            max_concurrent_backfill_tasks = 12
         }
     }
     destination_config {
